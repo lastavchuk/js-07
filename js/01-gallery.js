@@ -36,6 +36,6 @@ gallery.addEventListener("click", event => {
   instanceImg.show();
 });
 
-document.body.addEventListener("keyup", event =>
-  event.code === "Escape" ? instanceImg.close() : ""
-);
+document.body.addEventListener("keyup", event => {
+  if (event.code === "Escape") instanceImg.close();
+});
